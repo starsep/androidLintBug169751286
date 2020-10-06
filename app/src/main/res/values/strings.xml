@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">androidLintBug169751286</string>
+    <string name="stringTemplate">Some string %1$s, double %2$f, and int %3$d</string>
+</resources>
