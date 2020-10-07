@@ -12,6 +12,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         androidGradlePluginVersion: ["4.0.2", "4.1.0-rc03", "4.1.0-alpha08", "4.2.0-alpha13"]
     steps:
