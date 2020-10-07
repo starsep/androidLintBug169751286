@@ -1,1 +1,24 @@
-apply plugin: 'kotlin'
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 30
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    api 'androidx.core:core-ktx:1.3.2'
+    api 'androidx.appcompat:appcompat:1.2.0'
+    api("androidx.lifecycle:lifecycle-extensions:$lifecycleVersion")
+    api("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
+    api("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion")
+    api 'androidx.fragment:fragment-ktx:1.2.5'
+}
